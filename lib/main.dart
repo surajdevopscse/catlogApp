@@ -1,15 +1,15 @@
+import 'package:catlogapp/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text('Catlog App'),
-        backgroundColor: Colors.red,
-      ),
-      body: Center(
-        child: Text('The Catlog App'),
-      ),
-    ),
-  ));
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomePage(),
+    );
+  }
 }
