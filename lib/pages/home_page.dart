@@ -1,3 +1,4 @@
+import 'package:catlogapp/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
           child: Text('The Catlog App'),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
