@@ -7,10 +7,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Catlog App'),
-        backgroundColor: Colors.red,
       ),
       body: Center(
-        child: Text('The Catlog App'),
+        child: Container(
+          child: Text('The Catlog App'),
+        ),
       ),
       drawer: Drawer(),
     );
