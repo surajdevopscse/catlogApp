@@ -10,11 +10,15 @@ class MyDrawer extends StatelessWidget {
         child: ListView(
           children: [
             DrawerHeader(
+              padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
                 accountEmail: Text('Surajsy@gmail.com'),
                 accountName: Text('Suraj Yadav'),
-                currentAccountPicture: CircleAvatar(),
+                currentAccountPicture: CircleAvatar(
+                  child: Image.network(
+                      'https://lh3.googleusercontent.com/-2HU1W6amjDI/AAAAAAAAAAI/AAAAAAAAAAU/ARnfiDOg1oY/photo.jpg'),
+                ),
               ),
             ),
             ListTile(
